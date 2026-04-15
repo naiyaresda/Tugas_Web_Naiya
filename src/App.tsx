@@ -10,18 +10,18 @@ import Sponsor from './components/sections/Sponsor';
 import Footer from './components/layout/Footer';
 import ScrollTop from './components/ScrollTop';
 
-import './App.css';
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import './App.css';
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: true
+  //   });
+  // }, []);
   return(
     <>
       <Navbar />
