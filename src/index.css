@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf6f0;
+  color: #3b2f2f;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-/* .container-main{
-  max-width: 1200px;
-  margin: 0 auto;
-} */

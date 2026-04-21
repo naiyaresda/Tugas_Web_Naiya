@@ -1,22 +1,16 @@
-interface buttonProps {
+import React from "react";
+
+interface ButtonProps {
   title: string;
 }
 
-const Button: React.FC<buttonProps> = ({ title }) => {
+export default function Button({ title }: ButtonProps) {
   return (
-     <button className="relative px-6 py-3 bg-[#8b2c4a] text-white rounded-lg overflow-hidden group hover:scale-105 transition">
-
-      <span className="relative z-10">{title}</span>
-
-      <span className="
-        absolute top-0 right-0 h-full w-10 
-        bg-white opacity-10 rotate-6 translate-x-20
-        transition-all duration-700
-        group-hover:-translate-x-52
-      " />
-
+    <button
+      type="submit"
+      className="w-full bg-[#7a2e2e] text-white py-3 rounded-lg font-medium text-sm mt-3 hover:bg-[#5c2323] transition"
+    >
+      {title}
     </button>
   );
-};
-
-export default Button;
+}
