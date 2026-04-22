@@ -9,6 +9,7 @@ import FAQ from './components/sections/FAQ';
 import Sponsor from './components/sections/Sponsor';
 import Footer from './components/layout/Footer';
 import ScrollTop from './components/ScrollTop';
+import Button from './components/ui/Button';
 
 // import './App.css';
 // import AOS from "aos";
