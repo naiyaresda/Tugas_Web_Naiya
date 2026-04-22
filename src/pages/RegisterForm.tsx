@@ -40,15 +40,48 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-gray-100">
-      <h1 className="text-2xl font-semibold text-[#7a2e2e] mb-6">
+    <div className="bg-gradient-to-br from-[#fffaf7] via-[#fdeee8] to-[#f9e0d6] p-8 rounded-2xl shadow-[0_10px_40px_rgba(122,46,46,0.15)] border border-[#f1d5c9]">
+      
+      {/* TITLE */}
+      <h1 className="text-2xl font-semibold text-[#7a2e2e] mb-6 text-center">
         Create Account
       </h1>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-        <InputText label="Nama" nama="nama" register={register} error={errors.nama?.message} />
-        <InputText label="Email" nama="email" register={register} error={errors.email?.message} />
 
+        {/* 1. Nama */}
+        <InputText
+          label="Nama"
+          nama="nama"
+          register={register}
+          error={errors.nama?.message}
+        />
+
+        {/* 2. Email */}
+        <InputText
+          label="Email"
+          nama="email"
+          register={register}
+          error={errors.email?.message}
+        />
+
+        {/* 3. Password */}
+        <InputPassword
+          label="Password"
+          nama="password"
+          register={register}
+          error={errors.password?.message}
+        />
+
+        {/* 4. Confirm Password */}
+        <InputPassword
+          label="Confirm Password"
+          nama="password_confirm"
+          register={register}
+          error={errors.password_confirm?.message}
+        />
+
+        {/* 5. Jenis Event */}
         <Select
           label="Jenis Event"
           nama="jenis_event"
@@ -57,6 +90,7 @@ export default function RegisterForm() {
           error={errors.jenis_event?.message}
         />
 
+        {/* 6. Biodata */}
         <TextArea
           label="Biodata Singkat"
           nama="biodata"
@@ -64,10 +98,8 @@ export default function RegisterForm() {
           error={errors.biodata?.message}
         />
 
-        <InputPassword label="Password" nama="password" register={register} error={errors.password?.message} />
-        <InputPassword label="Confirm Password" nama="password_confirm" register={register} error={errors.password_confirm?.message} />
-
         <Button title="Register" />
+
       </form>
     </div>
   );

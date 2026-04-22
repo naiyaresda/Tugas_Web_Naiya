@@ -17,7 +17,7 @@ export const InputPassword: React.FC<InputPasswordProps> = ({
 
   return (
     <div className="flex flex-col">
-      <label className="text-xs text-gray-500 mb-1">
+      <label className="text-xs text-[#7a2e2e] font-medium mb-1">
         {label}
       </label>
 
@@ -32,7 +32,7 @@ export const InputPassword: React.FC<InputPasswordProps> = ({
         <button
           type="button"
           onClick={() => setShow(!show)}
-          className="absolute right-3 top-3 text-xs text-gray-500 hover:text-black"
+          className="absolute right-3 top-3 text-xs text-gray-500 hover:text-[#7a2e2e]"
         >
           {show ? "Hide" : "Show"}
         </button>

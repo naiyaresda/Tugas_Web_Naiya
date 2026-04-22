@@ -15,7 +15,7 @@ export const InputText: React.FC<InputTextProps> = ({
 }) => {
   return (
     <div className="flex flex-col">
-      <label className="text-xs text-gray-500 mb-1">
+      <label className="text-xs text-[#7a2e2e] font-medium mb-1">
         {label}
       </label>
 
